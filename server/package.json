@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test jest --runInBand --forceExit --coverage --verbose",
-    "start": "npx ts-node app.ts"
+    "build": "npx tsc",
+    "start": "node dist/app.js",
+    "dev": "npx ts-node app.ts",
+    "test": "NODE_ENV=test jest --runInBand --forceExit --coverage --verbose"
   },
   "keywords": [],
   "author": "",

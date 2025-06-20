@@ -6,7 +6,7 @@ import { bs58 } from "@coral-xyz/anchor/dist/cjs/utils/bytes";
 
 config();
 
-export const MONGO_URI = "mongodb+srv://iamoluwaseyiolasupo:s0a5DBgL39SkTca0@cluster0.c7wdpkn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+export const MONGO_URI = process.env.MONGO_TEST_URI
 export const REDIS_URL = process.env.REDIS_URL || "";
 export const cluster = "devnet";
 export const SOLANA_RPC_URL =

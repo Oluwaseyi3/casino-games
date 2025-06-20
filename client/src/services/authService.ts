@@ -3,7 +3,7 @@ import { PublicKey } from "@solana/web3.js";
 import bs58 from "bs58";
 import nacl from "tweetnacl";
 
-const API_BASE_URL = process.env.SERVER_API_URL || "http://localhost:8000";
+const API_BASE_URL = process.env.SERVER_API_URL
 
 export interface LoginResponse {
   success: boolean;

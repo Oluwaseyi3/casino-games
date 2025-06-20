@@ -13,8 +13,9 @@ import User from "../services/User";
 // queue that fetches transaction of an entity
 export const payoutQueue = new Queue(
   "payout",
-  `redis://${REDIS_URL || "127.0.0.1:6379"}`
+  REDIS_URL || "redis://127.0.0.1:6379"
 );
+
 payoutQueue.process(async function (job, done) {
   try {
     const payout = await new SolanaService(SOLANA_RPC_URL).initiateTokenPayout(

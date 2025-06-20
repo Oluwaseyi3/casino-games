@@ -7,7 +7,7 @@ import { bs58 } from "@coral-xyz/anchor/dist/cjs/utils/bytes";
 config();
 
 export const MONGO_URI = process.env.MONGO_TEST_URI
-export const REDIS_URL = process.env.REDIS_URL
+export const REDIS_URL = process.env.REDIS_URL || "127.0.0.1:6379";
 export const cluster = "devnet";
 export const SOLANA_RPC_URL =
   process.env.SOLANA_RPC_URL || "https://api.devnet.solana.com";

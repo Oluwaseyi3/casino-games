@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from "axios";
 
 // API Configuration
-const API_BASE_URL = process.env.REACT_APP_API_URL
+const API_BASE_URL = "https://casino-games.onrender.com"
 
 // Types for Game API
 export interface GameConfig {
